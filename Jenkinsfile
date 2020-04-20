@@ -3,10 +3,10 @@ pipeline{
     stages{
         stage ("Build"){
             when{
-               tag "2.0" 
+               tag "Release-to-Prod" 
             }
             steps{
-                echo "Building tags 2.0"
+                echo "Building tags To Prod"
             }
         }
     }
